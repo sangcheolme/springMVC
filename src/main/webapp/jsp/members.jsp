@@ -1,7 +1,8 @@
 <%@ page import="cuk.mvc.domain.member.MemberRepository" %>
 <%@ page import="cuk.mvc.domain.member.Member" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.List" %><%
+<%@ page import="java.util.List" %>
+<%
     MemberRepository memberRepository = MemberRepository.getInstance();
     List<Member> members = memberRepository.findAll();
 %>
